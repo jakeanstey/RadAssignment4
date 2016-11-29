@@ -29,6 +29,13 @@ namespace Assignment4
 
         private void NewOrderButton_Click(object sender, EventArgs e)
         {
+            SelectForm selectForm = new SelectForm(this);
+            selectForm.Show();
+            this.Hide();
+        }
+
+        private void StartForm_Load(object sender, EventArgs e)
+        {
 
         }
     }
