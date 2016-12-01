@@ -23,8 +23,20 @@ namespace Assignment4
 
             ProductIDTextBox.Text = ""+computer.productID;
             ConditionTextBox.Text = computer.condition;
-            CostTextBox.Text = "$" + computer.cost;
-
+            CostTextBox.Text = "$" + (Math.Truncate(100 * (Decimal)computer.cost) / 100);
+            PlatformTextBox.Text = computer.platform;
+            OSTextBox.Text = computer.OS;
+            ManufacturerTextBox.Text = computer.manufacturer;
+            ModelTextBox.Text = computer.model;
+            MemoryTextBox.Text = computer.RAM_size;
+            LCDSizeTextBox.Text = computer.displaytype;
+            HDDTextBox.Text = computer.HDD_size;
+            CPUBrandTextBox.Text = computer.CPU_brand;
+            CPUNumberTextBox.Text = computer.CPU_number;
+            GPUTypeTextBox.Text = computer.GPU_Type;
+            CPUTypeTextBox.Text = computer.CPU_type;
+            CPUSpeedTextBox.Text = computer.CPU_speed;
+            WebcamTextBox.Text = computer.webcam;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
