@@ -8,6 +8,7 @@ namespace Assignment4
 {
     static class Program
     {
+        public static Form startForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
